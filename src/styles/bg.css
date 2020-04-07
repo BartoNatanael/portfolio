@@ -1,0 +1,55 @@
+.bgTop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bgBot{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.h1bg{
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+img.bg{
+    position: absolute;
+    width: 110%;
+    top: 0;
+    z-index: -1;
+    filter: blur(2px);
+}
+
+@media (orientation: landscape) {
+    .bgTop{
+        height: 20vh;
+    }
+    .bgBot{
+        height: 20vh;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px){
+    .bgTop{
+        height: 15vh;
+    }
+    .bgBot{
+        height: 10vh;
+    }
+    .h1bg{
+        margin-top: 2%;
+    }
+}
+

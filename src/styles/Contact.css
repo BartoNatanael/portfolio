@@ -1,0 +1,113 @@
+.contact{
+    position: relative;
+    height: 110vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact form {
+    padding-top: 15vh;
+    width: 80%;
+    margin-left: 10%;
+}
+
+form input{
+    width: 100%;
+    height: 5vh;
+    margin-bottom: 3vh;
+    border: none;
+    background-color: #f8f8f8;
+}
+
+form textarea {
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 3vh;
+    border: none;
+    background-color: #f8f8f8;
+}
+
+.otherWays{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    line-height: 5vh;
+}
+
+.otherWays ul{
+    list-style: none;
+}
+.otherWays a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+@media (orientation: portrait) and (min-width: 410px){
+    .contact{
+        font-size: 18px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px){
+    .contact{
+        font-size: 25px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 1024px){
+    .contact{
+        font-size: 30px;
+    }
+}
+
+@media (orientation: landscape){
+    .flex{
+        display: flex;
+        flex-direction: row;
+        padding-top: 25vh;
+        justify-content: space-between;
+    }
+
+    .flex form{
+        width: 50%;
+        padding-top: 0;
+    }
+    .otherWays{
+        width: 50%;
+        margin-left: 0;
+        padding-left: 2%;
+        padding-top: 3%;
+        text-align: left;
+        line-height: 7vh;
+    }
+}
+@media (orientation: landscape) and (min-width: 1024px){
+    .otherWays{
+        padding-top: 0;
+        width: 40%;
+    }
+    .flex form{
+        width: 40%;
+    }
+    .contact{
+        height: 100vh;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px){
+    .contact{
+        font-size: 25px;
+    }
+    .otherWays a{
+        transition: .3s;
+    }
+    .otherWays a:hover{
+        color: aquamarine;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1440px){
+    .contact{
+        font-size: 30px;
+    }
+}

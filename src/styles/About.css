@@ -1,0 +1,56 @@
+.about{
+    position: relative;
+}
+
+.about p{
+    font-family: 'Open Sans', sans-serif;
+    padding: 25% 10% 8%;
+    text-align: justify;
+}
+
+@media (orientation: portrait) and (min-width: 410px){
+    .about{
+        font-size: 18px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px){
+    .about{
+        font-size: 25px;
+    }
+    .about p{
+        padding: 20% 10% 15%;
+    }
+}
+@media (orientation: portrait) and (min-width: 1024px){
+    .about{
+        font-size: 30px;
+    }
+}
+
+@media (orientation: landscape) {
+    .about p{
+        padding: 15% 10% 15%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px){
+    .about{
+        font-size: 20px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px){
+    .about{
+        font-size: 25px;
+    }
+    .about p{
+        padding: 15% 10% 10%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1440px){
+    .about{
+        font-size: 30px;
+    }
+}

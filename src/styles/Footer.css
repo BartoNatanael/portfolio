@@ -1,0 +1,60 @@
+footer{
+    height: 10vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+    /* height: 10vh; */
+}
+footer p{
+    line-height: 5vh;
+    text-align: center;
+}
+@media (orientation: portrait) and (min-width: 410px){
+    footer{
+        font-size: 18px;
+    }
+}
+@media (orientation: portrait) and (min-width: 768px){
+    footer{
+        font-size: 20px;
+    }
+}
+@media (orientation: portrait) and (min-width: 1024px){
+    footer{
+        font-size: 25px;
+    }
+}
+@media(orientation: landscape){
+    footer{
+        height: 3.5vh;
+        overflow: hidden;
+        /* line-height: auto; */
+        font-size: 14px;
+        line-height: 5vh;
+        padding: 0 5%;
+    }
+    footer p{
+        display: block;
+        width: 50%;
+        float: left;
+    }
+    footer p:nth-child(1){
+        text-align: left;
+    }
+    footer p:nth-child(2){
+        text-align: right;
+    }
+    footer p:nth-child(2) a{
+        margin-left: 2%;
+    }
+}
+@media (orientation: landscape) and (min-width: 768px){
+    footer{
+        /* font-size: 1px; */
+    }
+}

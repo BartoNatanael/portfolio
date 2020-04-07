@@ -1,0 +1,111 @@
+.myProjects{
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    height: 170vh;
+}
+
+.projects{
+    padding-top: 20%;
+    /* padding-bottom: 20%; */
+    /* height: 150vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+justify-content: space-around
+}
+
+.project{
+    height: 20vh;
+    width: 80vw;
+    text-align: center;
+    background-color: aqua;
+    margin-bottom: 15px;
+    box-sizing: content-box;
+}
+
+.project h3{
+    margin-top: 5px;
+}
+
+.project p{
+    margin-top: 5px;
+}
+
+.myProjects a{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    background-color: aquamarine;
+    display: block;
+    height: 8vh;
+    line-height: 8vh;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 20%;
+}
+
+@media (orientation: portrait) and (min-width: 768px){
+    .myProjects{
+        font-size: 25px;
+    }
+    .project{
+        width: 70%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 1024px){
+    .myProjects{
+        font-size: 30px;
+    }
+}
+
+@media (orientation: landscape){
+    .myProjects{
+        height: 230vh;
+    }
+    .projects{
+        padding-top: 15%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .project{
+        height: 50vh;
+        width: 40%;
+        text-align: center;
+        background-color: aqua;
+        margin-bottom: 15px;
+    }
+}
+@media (orientation: landscape) and (min-width: 1024px){
+    .myProjects{
+        font-size: 20px;
+        height: 140vh;
+    }
+    .project{
+        width: 27%;
+        height: 40vh;
+        margin-bottom: 10vh;
+    }
+    .myProjects a{
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+@media (orientation: landscape) and (min-width: 1280px){
+    .myProjects{
+        font-size: 25px;
+        height: 150vh;    
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1440px){
+    .myProjects{
+        font-size: 30px;
+    }
+}
