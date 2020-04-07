@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.61e007ba.chunk.css",
+    "main.js": "/portfolio/static/js/main.e6738063.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e6738063.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.b37861ed.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.b37861ed.js.map",
+    "static/js/2.5dda91c5.chunk.js": "/portfolio/static/js/2.5dda91c5.chunk.js",
+    "static/js/2.5dda91c5.chunk.js.map": "/portfolio/static/js/2.5dda91c5.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.3bd4378d60a96ce4a2d6f22bd3739630.js": "/portfolio/precache-manifest.3bd4378d60a96ce4a2d6f22bd3739630.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.61e007ba.chunk.css.map": "/portfolio/static/css/main.61e007ba.chunk.css.map",
+    "static/js/2.5dda91c5.chunk.js.LICENSE.txt": "/portfolio/static/js/2.5dda91c5.chunk.js.LICENSE.txt",
+    "static/media/photo.JPG": "/portfolio/static/media/photo.7f505101.JPG",
+    "static/media/sciana.jpg": "/portfolio/static/media/sciana.5cf47609.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b37861ed.js",
+    "static/js/2.5dda91c5.chunk.js",
+    "static/css/main.61e007ba.chunk.css",
+    "static/js/main.e6738063.chunk.js"
+  ]
+}
