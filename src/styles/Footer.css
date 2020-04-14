@@ -8,7 +8,12 @@ footer a{
     color: black;
     text-decoration: none;
     transition: 0.3s;
+    margin-right: 5%;
     /* height: 10vh; */
+}
+
+footer p:nth-child(1) a{
+    margin-right: 0;
 }
 footer p{
     line-height: 5vh;

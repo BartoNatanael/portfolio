@@ -1,11 +1,10 @@
 .contact{
     position: relative;
-    height: 110vh;
     font-family: 'Open Sans', sans-serif;
 }
 
 .contact form {
-    padding-top: 15vh;
+    padding-top: 5vh;
     width: 80%;
     margin-left: 10%;
 }
@@ -64,7 +63,8 @@ form textarea {
     .flex{
         display: flex;
         flex-direction: row;
-        padding-top: 25vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
         justify-content: space-between;
     }
 
@@ -89,9 +89,6 @@ form textarea {
     .flex form{
         width: 40%;
     }
-    .contact{
-        height: 100vh;
-    }
 }
 
 @media (orientation: landscape) and (min-width: 1280px){
@@ -110,4 +107,5 @@ form textarea {
     .contact{
         font-size: 30px;
     }
+    
 }

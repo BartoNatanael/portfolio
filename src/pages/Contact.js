@@ -4,7 +4,9 @@ import BgTop from '../components/bgTop';
 import BgBot from '../components/bgBot';
 import '../styles/Contact.css';
 
-const Contact = () => {
+const Contact = (props) => {
+
+    let lang = props.english
     function sendEmail(e) {
         e.preventDefault();
     
@@ -17,27 +19,27 @@ const Contact = () => {
       }
     return ( 
         <div className='contact'>
-            <BgTop title={'Kontakt'}/>
+            <BgTop title={lang ? "Contact" : 'Kontakt'}/>
             <div className='flex'>
             <form className="contact-form" onSubmit={sendEmail}>
                 <input type="hidden" name="contact_number" />
                 <br/>
-                <input type="text" name="user_name" placeholder='Twoje imię'/>
+                <input type="text" name="user_name" placeholder={lang ? 'Your name' : 'Twoje imię'}/>
                 <br/>
-                <input type="email" name="user_email" placeholder='Twój mail'/>
+                <input type="email" name="user_email" placeholder={lang ? 'Your email adress' : 'Twój mail'}/>
                 <br/>
-                <textarea name="message" placeholder='Twoja wiadomość'/>
-                <input type="submit" value="Wyślij" />
+                <textarea name="message" placeholder={lang? "Your message" : 'Twoja wiadomość'}/>
+                <input type="submit" value={lang ? 'Send' : "Wyślij"} />
             </form>
             <div className="otherWays">
-                <h3>Mój mail:</h3>
+                <h3>{lang? "My email adress:" : 'Mój mail:'}</h3>
                 <p>bartlomiej.krzysztof.nowak@gmail.com</p>
-                <h3>Moje profile społecznościowe:</h3>
+                <h3>{lang?'My profiles:':'Moje profile społecznościowe:'}</h3>
                 <ul>
-                    <li><a href="#"><i class="fab fa-github"></i> Git-hub</a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
-                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://github.com/BartoNatanael"><i className="fab fa-github"></i> Git-hub</a></li>
+                    <li><a href="https://www.linkedin.com/in/bart%C5%82omiej-nowak-bb4897182/"><i className="fab fa-linkedin"></i> Linkedin</a></li>
+                    <li><a href="https://www.facebook.com/bartek.krzysiek.nowak"><i className="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://www.instagram.com/bartonatanel/"><i className="fab fa-instagram"></i> Instagram</a></li>
                 </ul>
             </div></div>
             <BgBot/>

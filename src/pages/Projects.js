@@ -12,8 +12,8 @@ const list = [
     {name: "Snake5", discription: "Lorem impsum"},
 ]
 
-const Projects = () => {
-
+const Projects = (props) => {
+    let lang = props.english
     const projects = list.map(project =>(
         <div key={project.name} className='project'>
             <h3>{project.name}</h3>
@@ -22,9 +22,9 @@ const Projects = () => {
     ))
     return ( 
         <div className="myProjects">
-        <BgTop title={'Moje projekty'}/>
+        <BgTop title={lang ? "My projects" : 'Moje projekty'}/>
             <div className="projects">{projects}</div>
-            <a href="#">Zobacz więcej na moim git-hubie</a>
+            <a href="#">{lang ? 'See more on my Git-hub' : 'Zobacz więcej na moim Git-hubie'}</a>
             <BgBot/>
         </div>
      );

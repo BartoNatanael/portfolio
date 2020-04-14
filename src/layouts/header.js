@@ -3,21 +3,24 @@ import { NavLink} from 'react-router-dom';
 import '../styles/Header.css';
 
 const list = [
-    {name: 'Bartłomiej Nowak - portfolio', path: '/', exact: true},
-    {name: 'O mnie', path: '/about'},
-    {name: 'Moje projekty', path: "/projects"},
-    {name: "Kontakt", path: '/contact'}
+    {name: 'Bartłomiej Nowak - portfolio', englishName:'Bartłomiej Nowak - portfolio', path: '/', exact: true},
+    {name: 'O mnie', englishName:'About me', path: '/about'},
+    {name: 'Moje projekty', englishName:'Projects', path: "/projects"},
+    {name: "Kontakt", englishName:'Contact', path: '/contact'}
 ]
 
-const Header = () => {
+const Header = (props) => {
+
+    let english = props.lang
 
     const menu = list.map(item => (
-            <NavLink key={item.name} to={item.path} exact={item.exact ? item.exact: false}>{item.name}
+            <NavLink key={item.name} to={item.path} exact={item.exact ? item.exact: false}>{english ? item.englishName : item.name}
             </NavLink>        
     ))
     return ( 
         <nav>
                 {menu}
+                <button onClick={props.langChange}>{english ? "Polish" : "Angielski"}</button>
         </nav>
      );
 }

@@ -1,14 +1,12 @@
 .bgTop{
-    position: absolute;
-    top: 0;
-    left: 0;
     height: 10vh;
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .bgBot{
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     height: 10vh;
@@ -26,8 +24,11 @@
 
 img.bg{
     position: absolute;
-    width: 110%;
-    top: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
     z-index: -1;
     filter: blur(2px);
 }

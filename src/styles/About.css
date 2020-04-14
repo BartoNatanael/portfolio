@@ -1,16 +1,73 @@
 .about{
-    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about h2{
+    text-align: center;
+    padding-top: 2%;
+    transition: .5s;
+}
+
+.about .panel.active h2{
+    padding-top: 0;
 }
 
 .about p{
-    font-family: 'Open Sans', sans-serif;
-    padding: 25% 10% 8%;
+    padding-top: 50%;
+    transition: .7s;
     text-align: justify;
+}
+
+.about .panel.active p{
+    font-family: 'Open Sans', sans-serif;
+    padding: 5% 3%;
+    text-align: justify;
+}
+
+.panels {
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* text-align: center; */
+  }
+.panel{
+    width: 100%;
+    align-items: center;
+      /* Safari transitionend event.propertyName === flex */
+      /* Chrome + FF transitionend event.propertyName === flex-grow */
+      transition:
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        background 0.2s;
+        flex: 1;
+        overflow: hidden;
+        /* border: 2px solid black; */
+        /* justify-content: center; */
+      /* align-items: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column; */
+}
+.panel:nth-child(1){
+    background-color: whitesmoke;
+}
+
+.panel:nth-child(3){
+    background-color: lightgray;
+}
+
+.panel.active{
+    flex: 7;
 }
 
 @media (orientation: portrait) and (min-width: 410px){
     .about{
         font-size: 18px;
+    }
+    .panel.active{
+        flex: 4;
     }
 }
 
@@ -21,6 +78,9 @@
     .about p{
         padding: 20% 10% 15%;
     }
+    .panel.active{
+        flex: 4;
+    }
 }
 @media (orientation: portrait) and (min-width: 1024px){
     .about{
@@ -29,8 +89,24 @@
 }
 
 @media (orientation: landscape) {
-    .about p{
-        padding: 15% 10% 15%;
+    .about .panel p{
+        padding: 250% 5% 15%;
+        transition: 1s;
+        /* transition-delay: .2s; */
+    }
+    .about .panel.active p{
+        padding: 0 2% 15%;
+    }
+    .about .panel h2{
+        padding-top: 30%;
+        transition-delay: 4s;
+        transition: .3s;
+    }
+    .about .panel.active h2{
+        padding-top: 2%;
+    }
+    .panels{
+        flex-direction: row;
     }
 }
 
