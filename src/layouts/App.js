@@ -29,7 +29,7 @@ class App extends Component {
 
   render(){
     return(
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="app">
           <header>
             {<Header lang={this.state.english} langChange={this.handleLanguage}/>}
