@@ -9,27 +9,28 @@ const Contact = (props) => {
     let lang = props.english
     function sendEmail(e) {
         e.preventDefault();
+        var submitted
     
-        emailjs.sendForm('contact_service', 'temaplate_id', e.target, 'BartoNatanael')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
+        // emailjs.sendForm('contact_service', 'temaplate_id', e.target, 'BartoNatanael')
+        //   .then((result) => {
+        //       console.log(result.text);
+        //   }, (error) => {
+        //       console.log(error.text);
+        //   });
       }
     return ( 
         <div className='contact'>
             <BgTop title={lang ? "Contact" : 'Kontakt'}/>
             <div className='flex'>
-            <form className="contact-form" onSubmit={sendEmail}>
+            <form className="contact-form" onSubmit="submitted=true" action="https://docs.google.com/forms/d/e/1FAIpQLSff9F3-m6rS9f6IRSCuxo6GtI1RCgRD5SdrAAyt_6RyuqxTrA/viewform?usp=pp_url">
                 <input type="hidden" name="contact_number" />
                 <br/>
-                <input type="text" name="user_name" placeholder={lang ? 'Your name' : 'Twoje imię'}/>
+                <input type="text" name="entry.1636029433" id="entry.1636029433" placeholder={lang ? 'Your name' : 'Twoje imię'}/>
                 <br/>
-                <input type="email" name="user_email" placeholder={lang ? 'Your email adress' : 'Twój mail'}/>
+                <input type="text" name="entry.1936518753" id="entry.1936518753" placeholder={lang ? 'Your email adress' : 'Twój mail'}/>
                 <br/>
-                <textarea name="message" placeholder={lang? "Your message" : 'Twoja wiadomość'}/>
-                <input type="submit" value={lang ? 'Send' : "Wyślij"} />
+                <textarea name="entry.1756888725" id="entry.1756888725" placeholder={lang? "Your message" : 'Twoja wiadomość'}/>
+                <input type="submit" value={lang ? 'Go to Google Form' : "Przejdź do Google Form"} />
             </form>
             <div className="otherWays">
                 <h3>{lang? "My email adress:" : 'Mój mail:'}</h3>

@@ -8,10 +8,10 @@ import toDoApp from '../images/toDoApp.png';
 import weather from '../images/weather.png';
 
 const list = [
-    {name: "Snake", discription: "Popular game written in React.JS, feel free to play it!", opis: "Popularna gra, zwana u nas wężem napisana w React.JS. Zapraszam do gry!", img: snake},
+    {name: "Snake", discription: "Popular game written in React.JS, feel free to play!", opis: "Popularna gra, zwana u nas wężem napisana w React.JS. Zapraszam do gry!", img: snake},
     {name: "Spacer", discription: "App writeen in Vue.JS showing data and images from NASA, using its' API", opis: "Aplikacja napisana w Vue.JS pokazująca zdjęcia oraz informacje NASA", img: spacer},
     {name: "To Do App", discription: "To Do App created in Create React App with posibility of adding your own tasks", opis: "Aplikacja To Do napisana w środowisku Create React App z możliwością dodania własnych zadań", img:toDoApp},
-    {name: "Weather", discription: "App created in React using API to show actual weather, daily and hourly forecast and showing photo of actual weather", opis: "Aplikacja napisana w React używająca API w celu pokazania aktualnej pogody, prognozy godzinowej i na parę dni oraz pokazująca zdjęcie aktualnej pogody", img:weather},
+    {name: "Weather App", discription: "App created in React using API to show actual weather, daily and hourly forecast and showing photo of actual weather", opis: "Aplikacja napisana w React używająca API w celu pokazania aktualnej pogody, prognozy godzinowej i na parę dni oraz pokazująca zdjęcie aktualnej pogody", img:weather},
 ]
 
 const Projects = (props) => {
@@ -20,6 +20,7 @@ const Projects = (props) => {
         <div key={project.name} className='project'>
             <h3>{project.name}</h3>
             <p>{lang ? project.discription : project.opis}</p>
+            <a href="http://www.example.com" className='projectLink'></a>
             <img src={project.img} alt=""/>
         </div>
     ))

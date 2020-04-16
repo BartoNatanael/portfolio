@@ -23,6 +23,12 @@ form textarea {
     margin-bottom: 3vh;
     border: none;
     background-color: #f8f8f8;
+    resize: none;
+}
+
+form textarea::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 6px;
 }
 
 .otherWays{
